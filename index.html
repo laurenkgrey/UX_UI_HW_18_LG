@@ -59,75 +59,43 @@
 
   <!-- My Work -->
 
-<section class="myWork" style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+  <section class="myWork" style="font-family:Verdana, Geneva, Tahoma, sans-serif">
     <h1>MY WORK</h1>
 
-     
-    <div class="row">
-        <div class="column" style="background-color:rgb(245, 239, 202);">
-            <img src="images/hov.png" width="100%" height="auto">
-          <h2>Heart of the Valley</h2>
+    <div class="grid-container">
+      <div class="item1">
+        <img src="images/hov.png" width="45%" height="60%">
+        <h2>Heart of the Valley</h2>
           <p>Redesign the Heart of the Valley website and navigation to increase accessibility and usability for its users. Additionally, our team created an engaging quiz that conveys Heart of the Valley’s eligibility requirements and connects seniors with further resources.</p>
-          <button>Case Study</button>
-        </div>
+          <button class="btn">Case Study</button>
+   </div>
+     
+   
+   <div class="item2">
+    <img src="images/energy.png" width="45%" height="60%">
+    <h2>Department of Energy</h2>
+    <p>My partner and I focused on bringing some playfulness and organization to the current design of Energy.gov. The original website lacked cohesive navigation and user flow.</p>
+    <button class="btn">Case Study</button>
+   </div>
 
-        <div class="column" style="background-color:rgb(245, 239, 202);">
-            <img src="images/energy.png" width="100%" height="auto">
-          <h2>Department of Energy</h2>
-          <p>My partner and I focused on bringing some playfulness and organization to the current design of Energy.gov. The original website lacked cohesive navigation and user flow.</p>
-          <button>Case Study</button>
-        </div>
-    </div>
-      
-    <div class="row">
-        <div class="column" style="background-color:rgb(245, 239, 202);">
-            <img src="images/sci copy.png" width="100%" height="auto">
+  <div class="item3">
+    <img src="images/sci copy.png" width="45%" height="60%">
           <h2>Saratoga Capital, Inc.</h2>
-          <p>Saratoga Capital, Inc. is a real estate property management/development firm that owns many assets up and down the West coast. Their existing website needed a major redesign in order to increase leasing potential and retain existing tenants in their building. The navigation and overall aesthetic of the website was my main focus for this project.</p>
-          <button>Case Study</button>
-        </div>
+          <p>Saratoga Capital, Inc. is a real estate property management/development firm that owns many assets up and down the West coast. Their existing website needed a major redesign in order to increase leasing potential and retain existing tenants in their building.</p>
+          <button class="btn">Case Study</button>
+  </div>
 
-        <div class="column" style="background-color:rgb(245, 239, 202);">
-            <img src="images/sps.png" width="100%" height="auto">
+  <div class="item4">
+    <img src="images/sps.png" width="45%" height="60%">
           <h2>Seattle Public Schools</h2>
-          <p>The Seattle Public School website is a widely used website for thousands of parents/students. The existing navigation and web-organization needed a significant redesign in order to increase usability. Accessibility was a major factor in this redesign as many different demographics interact with it.</p>
-          <button>Case Study</button>
-        </div>
-    </div>
+          <p>The Seattle Public School website is a widely used website for thousands of parents/students. The existing navigation and web-organization needed a significant redesign in order to increase usability and accessability.</p>
+          <button class="btn">Case Study</button>
+  </div>
+    
+</div>
+  </section>
 
 
-      <div class="button">
-        <button>View All Projects</button>
-      </div>
-      
-
-    <script>
-        // Get the elements with class="column"
-        var elements = document.getElementsByClassName("column");
-        
-        // Declare a loop variable
-        var i;
-        
-      
-        // Grid View
-        function gridView() {
-          for (i = 0; i < elements.length; i++) {
-            elements[i].style.width = "33.33%";
-          }
-        }
-        
-        /* Optional: Add active class to the current button (highlight it) */
-        var container = document.getElementById("btnContainer");
-        var btns = container.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-          });
-        }
-    </script>
-</section>
 
 
 
