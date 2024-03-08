@@ -124,16 +124,16 @@ body {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: #f1f1f1;
+    background-color: lightskyblue;
     cursor: pointer;
   }
   
-  .btn:hover {
+  .btn:hover {font-family:Verdana, Geneva, Tahoma, sans-seriffont-family, Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ddd;
   }
   
   .btn.active {
-    background-color: lightcyan;
+    background-color: #bac9ff;
     color: white;
   }
 
@@ -145,6 +145,7 @@ body {
     cursor: pointer;
     text-align: center;
   }
+
 
 
 
